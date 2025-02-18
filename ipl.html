@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(165, 246, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+        }
+
+        .boxes {
+            background-color: whitesmoke;
+            display: grid;
+            grid-template-columns: 150px 100px 200px 150px 100px 100px 150px;
+            grid-template-rows: 150px 150px 150px;
+        }
+
+        .box {
+            background-color: whitesmoke;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box1 {
+            background: #7F7FD5;
+            background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+            background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+            grid-area: 1/1/2/3;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .box2 {
+            background: #FDC830;
+            background: -webkit-linear-gradient(to right, #F37335, #FDC830);
+            background: linear-gradient(to right, #F37335, #FDC830);
+            grid-area: 1/3/2/6;
+        }
+
+        .box3 {
+            background: #7F7FD5;
+            background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+            background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+            grid-area: 1/6/2/8;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box4 {
+            background: #b92b27;
+            background: -webkit-linear-gradient(to right, #1565C0, #b92b27);
+            background: linear-gradient(to right, #1565C0, #b92b27);
+            grid-area: 2/1/3/4;
+        }
+
+        .box5 {
+            background: #FDC830;
+            background: -webkit-linear-gradient(to right, #F37335, #FDC830);
+            background: linear-gradient(to right, #F37335, #FDC830);
+            grid-area: 2/4/3/8;
+        }
+
+        .box6 {
+            background: #E55D87;
+            background: -webkit-linear-gradient(to right, #5FC3E4, #E55D87);
+            background: linear-gradient(to right, #5FC3E4, #E55D87);
+            grid-area: 3/1/4/2;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box7 {
+            background: #C6FFDD;
+            background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+            background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+
+            grid-area: 3/2/4/5;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box8 {
+            background: #E55D87;
+            background: -webkit-linear-gradient(to right, #5FC3E4, #E55D87);
+            background: linear-gradient(to right, #5FC3E4, #E55D87);
+            grid-area: 3/5/4/7;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box9 {
+            background: #E55D87;
+            background: -webkit-linear-gradient(to right, #5FC3E4, #E55D87);
+            background: linear-gradient(to right, #5FC3E4, #E55D87);
+            grid-area: 3/7/4/8;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .boxxx {
+            width: 40%;
+            height: 100%;
+        }
+        .boo1 {
+            width: 40%;
+            height: 100%;
+        }
+
+        .b1 {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .b2 {
+            width: 40%;
+            height: 100%;
+        }
+
+        button {
+            background-color: antiquewhite;
+            color: black;
+            padding: 5px;
+            border-radius: .5px;
+
+        }
+
+        .pat {
+            font-size: 25px;
+        }
+
+        i {
+            font-size: 35px;
+            cursor: pointer;
+            margin: 12px;
+        }
+
+        .kkr {
+            margin: 12px;
+            margin-top: 7px;
+        }
+
+        .f {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="boxes">
+            <div class="box box1">
+                <h1 class="runs">1260</h1>
+                <p class="six">sixes</p>
+            </div>
+            <div class="box box2">
+                <div class="b1">
+                    <h1>Winners</h1>
+                    <p>Chennai super kings</p>
+
+                </div>
+                <div class="b2">
+                    <img src="csk.png" height="100%" alt="pp">
+                </div>
+            </div>
+            <div class="box box3">
+                <h1>1400</h1>
+                <p>runs</p>
+            </div>
+            <div class="box box4">
+                <div class="boxxx">
+                    <img src="virat.avif" height="100%" alt="pl">
+                </div>
+                <div class="boxxx1">
+                    <button>Orange cap</button>
+                    <h1>Virat kohli</h1>
+                    <p>Total runs : 1234</p>
+                    <p>Strike rate : 154.7</p>
+                    <p>Matches played : 20</p>
+                </div>
+            </div>
+            <div class="box box5">
+                <div class="boo1">
+                    <img src="pat.avif" height="100%" alt="us">
+                </div>
+                <div class="boo2">
+                    <button>Fair play</button>
+                    <h1>SRH</h1>
+                    <p class="pat">Pat cummins</p>
+                    <p>Points : 173</p>
+
+                </div>
+            </div>
+            <div class="box box6">
+                <i class="fa-solid fa-image"></i>
+                <p>pics</p>
+            </div>
+            <div class="box box7">
+                <h1 class="kkr">Interesting facts!!</h1>
+                <p>"KKR has crownrd championsfor 3rd time"</p>
+            </div>
+            <div class="box box8">
+                <i class="fa-solid fa-chart-line"></i>
+                <p>Match analysis</p>
+            </div>
+            <div class="box box9">
+                <i class="fa-solid fa-play"></i>
+                <p>Highlights</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
